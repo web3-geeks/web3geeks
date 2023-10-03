@@ -1,42 +1,44 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/duotoneLight');
-const darkCodeTheme = require('prism-react-renderer/themes/duotoneDark');
-const math = require('remark-math');
-const katex = require('rehype-katex');
+const lightCodeTheme = require("prism-react-renderer/themes/duotoneLight");
+const darkCodeTheme = require("prism-react-renderer/themes/duotoneDark");
+const math = require("remark-math");
+const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '互联网计算机中文开发文档',
-  tagline: '互联网计算机（Internet Computer/IC）是一个去中心化的云计算平台，利用颠覆性的链钥密码学技术将全世界独立的数据中心以子网的方式链接成一个可以无限扩容的虚拟主机。网络应用以智能合约的形式被封存在子网上的容器里，通过数据中心的服务器获得带宽，存储空间和算力。IC是目前唯一可以运行网络前端而且100%部署在链上的基础设施平台，在以太坊为首的资产型区块链以外，开创了一种全新范式 - 通用型区块链，解锁了重构互联网的无限可能。',
-  favicon: 'img/favicon.ico',
+  title: "极客 Web3",
+  tagline:
+    "极客 web3 正广纳有识之士，我们的定位是 Web3版《经济学人》，专注于泛 Web3 相关技术及其社会影响，立志于打造 public goods 平台，并充当创业者展示 idea 的重要渠道。" +
+    "欢迎加入！",
+  favicon: "img/web3_geeks_logo_small_output.png",
 
   // Set the production url of your site here
-  url: 'https://ic123.xyz',
+  url: "https://ic123.xyz",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ICP中文社区', // Usually your GitHub org/user name.
-  projectName: 'IC123', // Usually your repo name.
+  organizationName: "极客 Web3 社区", // Usually your GitHub org/user name.
+  projectName: "Web3Geeks", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         gtag: {
@@ -44,26 +46,25 @@ const config = {
           anonymizeIP: true,
         },
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/ic123-xyz/ic123/tree/main/docusaurus',
+          editUrl: "https://github.com/ic123-xyz/ic123/tree/main/docusaurus",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
-        blog: {
-          showReadingTime: true,
-          blogTitle: '互联网计算机ICP中文社区新闻', 
-          blogDescription: '来自ICP生态的社区新闻，产品进展，开发者动态',
-          blogSidebarCount: 'ALL',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   blogTitle: "互联网计算机ICP中文社区新闻",
+        //   blogDescription: "来自ICP生态的社区新闻，产品进展，开发者动态",
+        //   blogSidebarCount: "ALL",
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        // },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -71,154 +72,80 @@ const config = {
 
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      type: "text/css",
       integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
+        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      crossorigin: "anonymous",
     },
   ],
-  
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/icp-on-chain-badge-2-1.png',
-      metadata: [{name: 'keywords', content: 'ICP, IC, 互联网计算机, DFINITY, Internet Computer Protocol, Web3, Motoko, crypto, blockchain, 区块链, blockchain singularity'}],
+      image: "img/icp-on-chain-badge-2-1.png",
+      metadata: [
+        {
+          name: "keywords",
+          content:
+            "Geek, Web3, Crypto, Blockchain, 区块链, 极客, NFT, DeFi, Web 3.0",
+        },
+      ],
       navbar: {
-        title: 'IC123',
+        title: "Web3Geeks",
         logo: {
-          alt: 'ICP Logo',
-          src: 'img/icp_logo.svg',
+          alt: "ICP Logo",
+          src: "img/web3_geeks_logo_small_output.png",
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'newbieSidebar',
-            position: 'left',
-            label: '新手上路',
+            type: "docSidebar",
+            sidebarId: "hotArticleSidebar",
+            position: "left",
+            label: "热门文章",
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'devSidebar',
-            position: 'left',
-            label: '开发者教程',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'supportSidebar',
-            position: 'left',
-            label: '开发者资源',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'web3Sidebar',
-            position: 'left',
-            label: '解锁Web3',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'introSidebar',
-            position: 'left',
-            label: 'ICP介绍',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'appSidebar',
-            position: 'left',
-            label: '应用指南',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'ecoSidebar',
-            position: 'left',
-            label: '生态资源',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'aboutSidebar',
-            position: 'left',
-            label: '关于ic123',
-          },
-          {to: '/blog', label: '新闻', position: 'left'},
-          {
-            href: 'https://github.com/ic123-xyz/ic123',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://twitter.com/eternal1997L",
+            label: "Twitter",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: '引导',
+            title: "申请加入",
             items: [
               {
-                label: '核心词汇',
-                to: 'docs/getting-started/ic-glossary',
-              },
-              {
-                label: '教程',
-                to: 'docs/dev-course/motoko-basic-1',
-              },
-              {
-                label: '五分钟体验Hello World',
-                to: 'docs/getting-started/hello-world',
-              },
-              {
-                label: '白皮书',
-                to: 'docs/intro-ic/white-paper',
+                label: "Advisor - 0xkookoo",
+                href: "https://twitter.com/0xkookoo",
               },
             ],
           },
           {
-            title: '社区',
+            title: "社区",
             items: [
               {
-                label: 'DFINITY开发者论坛',
-                href: 'https://forum.dfinity.org/',
+                label: "Twitter",
+                href: "https://twitter.com/eternal1997L",
               },
               {
-                label: 'NNS社区投票',
-                href: 'https://dashboard.internetcomputer.org/governance',
+                label: "Telegram",
+                href: "https://t.me/geeksweb3",
               },
               {
-                label: '社区意见反馈',
-                href: 'https://dx.internetcomputer.org/',
-              },
-              {
-                label: '社区Live',
-                href: 'https://internetcomputer.org/live-sessions?source=nav',
-              },
-            ],
-          },
-          {
-            title: '动态',
-            items: [
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/i/communities/1679302895571988481',
-              },
-              {
-                label: '活动',
-                href: 'https://dfinity.org/events-and-news/',
-              },
-              {
-                label: 'Medium',
-                href: 'https://medium.com/dfinity',
-              },
-              {
-                label: 'Youtube',
-                href: 'https://www.youtube.com/dfinity',
+                label: "Medium",
+                href: "https://medium.com/@eternal1997L",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} IC123中文开发者社区`,
+        copyright: `Copyright © ${new Date().getFullYear()} 极客 Web3 社区, Powered by Internet Computer`,
         logo: {
-          alt: '100% hosted on-chain ICP badge',
-          src: 'img/icp-on-chain-badge-horizontal.png',
+          alt: "100% hosted on-chain ICP badge",
+          src: "img/icp-on-chain-badge-horizontal.png",
           width: 300,
           height: 36,
         },
@@ -228,12 +155,11 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       announcementBar: {
-        id: 'mark_us',
-        content:
-          '如果你喜欢这个网站，请星标<a target="_blank" href="https://github.com/ic123-xyz/ic123"><b>Github</b></a>并加入我们在推特上的<a target="_blank" href="https://twitter.com/i/communities/1679302895571988481"><b>ICP China</b></a>社区',
-        backgroundColor: '#04D9C4',
-        textColor: '#000000',
-        isCloseable: false, 
+        id: "mark_us",
+        content: "正式发布，抢先体验",
+        backgroundColor: "#04D9C4",
+        textColor: "#000000",
+        isCloseable: false,
       },
     }),
 };

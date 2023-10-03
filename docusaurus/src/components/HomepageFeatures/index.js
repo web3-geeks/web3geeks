@@ -1,54 +1,60 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    background: '#FFD3B6',
-    title: '追随业界大牛的脚印，加入最具颠覆新的行业技术前沿阵营',
+    background: "#FFD3B6",
+    title: "揭示真相 (Tell the Truth)",
     /* Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default, */
     description: (
       <>
-        Jan Camenisch, Ben Lynn, Jens Groth, Victor Shoup, Andreas Rossberg 这些世界顶流的密码学家，计算机专家过去四年都在做什么？他们都在DFINITY，研发最具颠覆性的下一代区块链技术 - ICP。
+        我们坚信在Web3时代，揭示真相是至关重要的。作为"极客web3"，我们承诺向读者提供准确、客观的信息和分析，帮助他们了解Web3技术的本质、潜力和社会影响。我们追求真实的报道，为您带来独立而可靠的见解。
       </>
     ),
   },
   {
-    background: '#DCEDC1',
-    title: '直接在区块链上部署网络应用前端，降低网络开发成本',
+    background: "#DCEDC1",
+    title: "基石 (The Fundamental)",
     /* Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default, */
     description: (
       <>
-        不需要支付高昂的中心化云服务平台费用，不需要自己搭建节点，不需要处理庞大臃肿的数据库，不需要考虑负载均衡，不需要从头搭建用户身份体系，不需要担心网络应用的安全性。
+        在这个快速发展的Web3世界中，我们将为您提供关键的基础知识。作为Web3专家，我们致力于探索和解释Web3技术的核心概念和原则。从区块链到智能合约，从去中心化身份到加密经济，我们将帮助您建立对Web3基础的深入理解。
       </>
     ),
   },
   {
-    background: '#FFAAA5',
-    title: '传统互联网开发经验无缝迁移，真正的Web3全栈式平台',
+    background: "#FFAAA5",
+    title: "Web3专家 (Web3 Experts)",
     /* Svg: require('@site/static/img/undraw_docusaurus_react.svg').default, */
     description: (
       <>
-        熟悉Kubernetes和actor模式？欢迎了解一下IC的容器型智能合约，除了分布式账本，还可以提供数据储存和算力。以太坊的Gas费用太贵？IC使用反向手续费模式，用户交易成本为0.04美分。
+        我们是Web3领域的专家团队。"极客web3"聚集了行业内最有才华的专业人士，他们对Web3技术和生态系统有着深入的了解。无论是最新的技术趋势、项目分析还是市场动态，我们的专家将为您提供独到的见解和观点，助您在Web3世界中保持领先。
       </>
     ),
   },
   {
-    background: '#A8E6CF',
-    title: '使用场景涵盖互联网所有垂直领域，解锁广阔职业发展空间',
+    background: "#A8E6CF",
+    title: "节点网络 (Node Network)",
     /* Svg: require('@site/static/img/undraw_docusaurus_react.svg').default, */
     description: (
       <>
-        数据，算力和账本的三合一，使得ICP可以在几乎所有的垂直领域找到落地场景。生态里已经涌现出上百个项目，在金融，社交，游戏，生产力工具，企业服务，人工智能各个赛道里挑战行业寡头。
+        "极客 web3"在各个赛道都拥有自己的节点人脉（Node），我们与 Web3
+        技术的各个领域保持紧密联系，并将这些知识进行结构化的输出。不论您关注的是
+        DeFi、Game、NFT 还是其他 Web3
+        创新领域，我们将为您提供精准、深入的资讯和见解。
       </>
     ),
   },
 ];
 
-function Feature({Svg, background, title, description}) {
+function Feature({ Svg, background, title, description }) {
   return (
-    <div className={clsx('col col--3')}>
-      <div className="text--center padding-horiz--md" style={{background: background, padding: 20}}>
+    <div className={clsx("col col--3")}>
+      <div
+        className="text--center padding-horiz--md"
+        style={{ background: background, padding: 20 }}
+      >
         <h3>{title}</h3>
         <p>{description}</p>
       </div>

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "canisters": {
-    "ic123_frontend": {
+    "web3geeks_frontend": {
       "type": "assets",
       "source": [
         "docusaurus/build"

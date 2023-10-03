@@ -3,6 +3,6 @@ curl -sLv -X POST \
     https://icp0.io/registrations \
     --data @- <<EOF
 {
-    "name": "ic123.xyz"
+    "name": "geek3.xyz"
 }
 EOF

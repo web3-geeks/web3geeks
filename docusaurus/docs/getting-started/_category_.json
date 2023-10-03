@@ -1,8 +1,8 @@
 {
-  "label": "新手上路",
+  "label": "热门文章",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "迅速体验ICP上开发容器型智能合约"
+    "description": "极客 Web3 的一些当前最热门的文章"
   }
 }
